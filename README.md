@@ -7,3 +7,6 @@ Interpolationmethods:
 - Polynomial Interpolation (Lagrange method)
 - Linear Splines
 - Cubic Splines
+
+Developer - Analysis Document:
+GUI_Interpolation_QT/AE/analyse_entwurf.pdf
