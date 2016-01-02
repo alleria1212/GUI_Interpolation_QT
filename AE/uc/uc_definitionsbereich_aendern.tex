@@ -1,0 +1,40 @@
+\textbf{Definitionsbereich \"andern}
+  \begin{itemize}
+  \item \textit{Ziel:} Der Definitionsbereich soll ge\"andert werden
+  \item \textit{Einordnung:}  Hauptfunktion
+  \item \textit{Vorbedingung:} Die Applikation ist ge\"offnet und zeigt die Zeichenfl\"ache sowie die Benutzeroberfl\"ache an.
+  \item \textit{Nachbedingung:} Die Applikation zeigt die aktualisierte Zeichenfl\"ache sowie Benutzeroberfl\"ache mit den neuen Grenzen an.
+  \item \textit{Nachbedingung im Fehlerfall:} Die Applikation zeigt eine Fehlermeldung an und ver\"andert die Zeichenfl\"ache nicht.
+  \item \textit{Hauptakteure:} Nutzer
+  \item \textit{Nebenakteure:}
+  \item \textit{Ausl\"oser:} Der Nutzer will den Definitionsbereich \"andern
+  \item \textit{Standardablauf:}
+    \begin{enumerate}[label=(\arabic*)]
+    \item Der Nutzer klickt mit der linken Maustaste auf eins der Textfelder auf der Benutzeroberfl\"ache unter der \"Uberschrift "'Definitionsbereich".
+    \item Der Nutzer \"andert den Wert im Textfeld.
+    \item Der Nutzer bet\"atigt mit der linken Maustaste den Button 'Definitionsbereich setzen'.
+    \item Die Applikation pr\"uft, ob Zahlen eingegeben wurden.
+    \item Die Applikation pr\"uft, ob $ x_{min} > x_{max}$ ist. 
+    \item Die Applikation pr\"uft, ob $ y_{min} > y_{max}$ ist.
+    \item Die Applikation \"andert den Definitionsbereich auf die gew\"unschten Werte.
+    \end{enumerate}
+      \item \textit{Verzweigungen:}
+     \begin{enumerate}[label=(2a\arabic*)]            	\setcounter{enumii}{3}
+      \item Der Nutzer will noch einen anderen Wert des Definitionsbereiches \"andern.
+   	\item Der Nutzer geht zu Schritt '1' zur\"uck.
+                \end{enumerate}      
+    \begin{enumerate}[label=(4a\arabic*)]
+      \item Der Nutzer hat eine ung\"ultige Eingabe get\"atigt.
+      \item Die Applikation gibt eine Fehlermeldung aus.
+      \end{enumerate}
+                      \begin{enumerate}[label=(5a\arabic*)]
+    \setcounter{enumii}{4}
+    \item Die Applikation erkennt, dass  '$ x_{min} > x_{max}$'  ist.
+      \item Die Applikation gibt eine Fehlermeldung aus.
+      \end{enumerate}
+           \begin{enumerate}[label=(6a\arabic*)]
+     \setcounter{enumii}{5}
+    \item Die Applikation erkennt, dass  '$ y_{min} > y_{max}$'  ist.
+    \item Die Applikation gibt eine Fehlermeldung aus.
+      \end{enumerate}
+  \end{itemize}

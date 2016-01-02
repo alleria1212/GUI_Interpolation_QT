@@ -1,0 +1,129 @@
+\chapter{Entwicklerdokumentation}
+\label{ch:5}
+
+\section{Codestruktur}
+Der Code besteht aus mehreren Klassen. Die Quelldateien befinden sich alle im gleichen Verzeichnis. Siehe Kapitel 4 f\"ur Installation. Im Folgenden wird die Codestruktur im Groben beschrieben. F\"ur eine detaillierte Dokumentation siehe Abschnitt 2 in diesem Kapitel.
+
+\subsection{Klasse MainWindow}
+Die Klasse {\tt MainWindow} ist f\"ur die graphische Darstellung der Benutzeroberfl\"ache zust\"andig. Der Quellcode findet sich in \refsec{ssec:6.1.1} und in den Dateien {\tt mainwindow.h} und {\tt mainwindow.cpp}.
+
+\subsection{Klasse InterpolationControl}
+Die Klasse {\tt InterpolationControl} verwaltet die zur verf\"ugung stehenden Interpolationsarten. Der Quellcode befindet sich in \refsec{ssec:6.1.2} und in den Dateien {\tt interpolationcontrol.h} und {\tt interpolationcontrol.cpp}
+
+\subsection{Klasse Interpolation}
+Diese Klasse stellt eine abstrakte Klasse zur Verf\"ugung, welche abgeleitet wird um die einzelnen Interpolationsmethoden zu implementieren. Die Standardm\"a\ss ig verf\"ugbaren Methoden sind lineare Splines, kubische Splines  und Polynominterpolation (Grad m-1, wobei m die Anzahl der St\"utzstellen ist.) Der Quellcode befindet sich jeweils im Anhang \refsec{ssec:6.1.3} und in den Dateien {\tt interpolation.h} und {\tt interpolation.h}.\\ 
+Der Quellcode der implementierten Verfahren befindet sich in \refsec{ssec:6.1.4} bis \refsec{ssec:6.1.6}
+
+
+\section{Detaillierte Dokumentation des Codes}
+In dem Unterverzeichnis {\tt ./Interpolation/doc/} befindet sich die Konfigurationsdatei {\tt Doxyfile} f\"ur die Erstellung der doxygen Dokumentation in {\tt HTML} oder \LaTeX\ Format. Zum Erstellen der Dokumentation muss der Befehl {\tt doxygen Doxyfile} in dem Verzeichnis {\tt ./Interpolation/doc/} aufgerufen werden. Es werden zwei neue Verzeichnisse {\tt ./Interpolation/doc/html/} und {\tt ./Interpolation/doc/latex/} erstellt. Um die {\tt HTML} Version anzuzeigen muss in den Ordner {\tt html} gewechselt werden und die Datei {\tt index.html} mit dem Standardbrowser ge\"offnet werden. Um die \LaTeX\ Dokumentation anzeigen zu lassen muss der Befehl {\tt make} in dem Ordner {\tt latex} ausgef\"uhrt werden. Anschlie\ss end kann die PDF Datei mit einem entsprechenden Programm gelesen werden.
+
+\section{Hinzuf\"ugen einer neuen Interpolationsart}
+Das Hinzuf\"ugen einer neuen Interpolationsart l\"asst sich in die folgenden Schritte unterteilen. 
+
+\subsection{Ableiten der Klasse Interpolation}
+Zun\"achst muss, um eine neue Interpolationsart zu implementieren, die Klasse Interpolation in der folgenden Form abgeleitet werden.
+
+\begin{lstlisting}
+#include <interpolation.h>
+
+class myInterpolation : public Interpolation
+{
+public:
+	void StartInterpolation(
+            const QVector<double>& xPos,
+            const QVector<double>& yPos,
+            QVector<double>& xCurve,
+            QVector<double>& yCurve
+            );
+};
+\end{lstlisting}
+
+Die eigentliche Interpolation wird durch die Schnittstelle {\tt StartInterpolation(...)} definiert, welche in den Variablen {\tt xCurve, yCurve} die zu {\tt xPos,yPos} geh\"orenden interpolierten Punkte speichert, die zum Zeichnen der Kurve verwendet werden.\\
+Diese Methode muss von dem Benutzer in folgender Form implementiert werden:
+
+\begin{lstlisting}
+
+void myInterpolation::StartInterpolation(
+            const QVector<double>& xPos,
+            const QVector<double>& yPos,
+            QVector<double>& xCurve,
+            QVector<double>& yCurve
+            )
+{
+	...
+	<myImplementation>
+	...
+}
+
+\end{lstlisting}
+
+\subsection{Hinzuf\"ugen der Interpolationsart in den Quellcode: InterpolationControl}
+Angenommen, die neue Interpolationsart wurde in den Dateien {\tt myinterpolation.h} und {\tt myinterpolation.cpp} gespeichert, muss zun\"achst die folgende Zeile zu den {\tt includes} der {\tt interpolationcontrol.h} und ein neues Objekt in den {\tt private:} Teil der Klasse hinzugef\"ugt werden. 
+
+\begin{lstlisting}
+...
+#include "myinterpolation.h"
+...
+\end{lstlisting}
+
+\begin{lstlisting}
+Interpolation * myInterpolationModel;
+\end{lstlisting}
+
+Danach muss in der Datei {\tt interpolationcontrol.cpp} in dem Konstruktor ein Objekt vom Typ {\tt myInterpolation} erzeugt  und in der Funktion {\tt changeActiveModel(...)} ein weiterer switch-case hinzugef\"ugt werden:
+
+\begin{lstlisting} 
+InterpolationControl::InterpolationControl()
+{
+	...
+	myInterpolationModel = new myInterpolation();
+	...
+}
+
+...
+
+void InterpolationControl::changeActiveModel(int _activeModel)
+{
+	...
+	switch(_activeModel)
+	{
+		...
+		case 3 : activeModel = myInterpolationModel;
+			str = "myInterpolation ausgewaehlt";
+			break;
+	}
+}
+\end{lstlisting}
+
+\subsection{Hinzuf\"ugen der Interpolationsart in den Quellcode: MainWindow}
+Zuletzt muss noch eine Zeile am Ende des Konstruktors der Klasse {\tt MainWindow} eingef\"ugt werden.
+\begin{lstlisting}
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
+{
+	...
+	ui->interpolation_select->addItem("myInterpolation");
+}
+\end{lstlisting}
+Nun befindet sich ein weiterer Eintrag {\tt myInterpolation} in der Auswahlbox auf der Benutzeroberfl\"ache und kann ausgew\"ahlt werden, um die Punkte auf der Zeichenfl\"ache mit {\tt myInterpolation} zu verbinden.
+
+\section{Software-Tests}
+Alle Anwendungsf\"alle wurden manuell auf Funktionalit\"at getestet. Die folgenden Anwendungsf\"alle wurden erfolgreich ohne Fehlermeldungen getestet:
+\begin{itemize}
+  \item Interpolationsart \"andern
+  \item Reset
+  \item Beenden
+  \item St\"utzstelle l\"oschen
+  \item St\"utzstelle hinzuf\"ugen
+\end{itemize}
+Der Anwendungsfall 'Definitionsbereich \"andern' wurde erfolgreich mit allen Fehlersituationen getestet, die in der Benutzerdokumentation ausf\"uhrlich beschrieben sind.
+
+
+
+
+
+
+
+

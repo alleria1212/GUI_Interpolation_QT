@@ -1,0 +1,143 @@
+\chapter{Analyse}
+\label{ch:2}
+
+\section{Anforderungsanalyse}
+\label{sec:2.1}
+
+\subsection{Benutzeranforderungen}
+Die Applikation erm\"oglicht es dem Benutzer, verschiedene Punkte in ein Koordinatensystem einzutragen und diese durch Interpolation graphisch zu verbinden.\\
+\\
+Die Applikation gibt dabei zun\"achst ein 100x50 Koordinatensystem auf der X-Y-Ebene vor.\\
+Auf der Benutzeroberfl\"ache kann der Benutzer die Gr\"o\ss e des Koordinatensystems, bzw. den Definitionsbereich ver\"andern.\\
+Mit der linken Maustaste kann der Benutzer Punkte im abgebildeten Koordinatensystem auf der Zeichenfl\"ache einzeichnen und mit einem rechten Mausklick auf einen Punkt kann der Benutzer diesen l\"oschen.
+Ist mehr als ein Punkt in dem angeklickten L\"oschradius, so l\"oscht die Applikation den Punkt mit dem kleinsten x-Wert.\\
+Sind mindestens zwei Punkte eingezeichnet, nachdem ein Punkt hinzugef\"ugt oder gel\"oscht wurde, dann startet die Applikation automatisch die Interpolation und verbindet die eingezeichneten Punkte auf der Zeichenfl\"ache mithilfe der gew\"ahlten Interpolationsmethode.\\
+Der Benutzer kann auf einer Auswahlbox auf der Benutzeroberfl\"ache zwischen einer Interpolation durch ein Polynom (Grad m-1 bei m zu Interpolierenden Punkten), oder durch lineare oder kubische Splines w\"ahlen.\\
+Nach dem Start des Programmes oder nach dem Zur\"ucksetzen ist die Interpolationsart standardm\"a\ss ig auf lineare Splines eingestellt.\\
+Der Benutzer kann zu jeder Zeit  mit dem Button "'Reset"  das leere 100x50 Koordinatensystem mit den Standardeinstellungen wiederherstellen oder mit dem Button "'Beenden" das Programm beenden. \\
+\\
+\subsection{Anwendungsfallanalyse}
+
+\textbf{Anwendungsfalldiagramm:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Aktivitaetsdiagramm/Top_Level_Use_Cases}
+\caption{Anwendungsfalldiagramm}
+\label{fig:Anwendungsfalldiagramm}
+\end{figure}
+
+\textbf{Aktivit\"atsdiagramme:}
+
+\input{uc/uc_interpolation_auswaehlen}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Aktivitaetsdiagramm/interpolationAuswaehlen.eps}
+\caption{Interpolationsart aendern}
+\label{fig:Interpolationsart aendern}
+\end{figure}
+
+\hfill \\
+\hfill \\
+\input{uc/uc_reset}  
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Aktivitaetsdiagramm/Reset.eps}
+\caption{Reset}
+\label{fig:Reset}
+\end{figure}
+
+\hfill \\
+\hfill \\
+\input{uc/uc_definitionsbereich_aendern}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Aktivitaetsdiagramm/definitionbereichAendern.eps}
+\caption{Definitionsbereich aendern}
+\label{fig:Definitionsbereich aendern}
+\end{figure}
+
+\hfill \\
+\hfill \\
+\input{uc/uc_beenden}  
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Aktivitaetsdiagramm/beenden.eps}
+\caption{Beenden}
+\label{fig:Beenden}
+\end{figure}
+
+\hfill \\
+\hfill \\
+\input{uc/uc_stuetzstelle_loeschen}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Aktivitaetsdiagramm/stuetzstelleLoeschen.eps}
+\caption{Stuetzstelle loeschen}
+\label{fig:Stutzstelle loeschen}
+\end{figure}
+
+\hfill \\
+\hfill \\
+\input{uc/uc_stuetzstelle_hinzufuegen}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Aktivitaetsdiagramm/stutzstelleHInzufuegen.eps}
+\caption{Stuetzstelle hinzufuegen}
+\label{fig:Stuetzstelle hinzufuegen}
+\end{figure}
+
+
+
+\section{Systemanforderungen}
+
+\subsection{Funktionale Anforderung}
+\begin{itemize}
+\item Anzeigen einer Zeichenfl\"ache
+\item Anzeigen einer Benutzeroberfl\"ache, welche folgende Funktionen bereitstellt:
+	\begin{enumerate}
+	\item Auswahl der Interpolationmethode
+	\item \"Anderung des Definitionsbereichs
+	\item Zur\"ucksetzten der Zeichenfl\"ache und Einstellungen auf default
+	\item Beenden Button
+	\end{enumerate}
+\item Anzeigen von Fehlermeldungen
+\item Eingabe von Gleitkommazahlen 
+\item Anzeigen einer Interpolationskurve
+\item Darstellung von Punkten auf der Zeichenfl\"ache
+\item Speichern der Punkte (Gleitkommazahlen, ganze Zahlen)
+\item L\"oschen und Hinzuf\"ugen von Punkten
+\item Test auf G\"ultigkeit des Definitionsbereichs
+\item Anzeigen von Gleitkommazahlen auf 2 Nachkommastellen 
+\item Nach dem Starten des Programms werden Defintionsbereich und Interpolationsart standardm\"a\ss ig fesgelegt
+\end{itemize}
+\subsection{Nicht Funktionale Anforderung}
+\begin{itemize}
+\item Hinzuf\"ugen und L\"oschen der Punkte durch Mausklick m\"oglich
+\item Eingabe der Zahlen durch Tastatur
+\item Skalierung des Hauptfensters bei unterschiedlichen Aufl\"osungen.
+\end{itemize}
+
+
+\section{Begriffsanalyse}
+\textbf{Klassenkandidaten:}
+\begin{itemize}
+  \item \textbf{Zeichenfl\"ache}
+  \item \textbf{Benutzeroberfl\"ache}
+  \item Definitionsbereich
+  \item \textbf{Interpolationsart}
+  \item Button
+  \item Textfeld
+  \item Auswahlbox
+  \item \textbf{MainWindow}
+  \item St\"utzstelle
+  \item L\"oschradius
+\end{itemize}
+\textbf{Begriffsmodell:}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/Begriffsmodel.eps}
+\caption{Begriffsmodell}
+\end{figure}

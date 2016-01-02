@@ -1,0 +1,26 @@
+\textbf{St\"utzstelle l\"oschen}
+  \begin{itemize}
+  \item \textit{Ziel:} Es soll eine vom Nutzer angeklickte St\"utzstelle von der Zeichenfl\"ache gel\"oscht werden.
+  \item \textit{Einordnung:} Hauptfunktion
+  \item \textit{Vorbedingung:} Die Applikation ist ge\"offnet und zeigt die Zeichenfl\"ache sowie die Benutzeroberfl\"ache an.
+  \item \textit{Nachbedingung:} Die Applikation zeigt die neu berechnete Interpolation ohne die gel\"oschte St\"utzstelle auf der Zeichenfl\"ache an.
+  \item \textit{Nachbedingung im Fehlerfall:}  Die Applikation zeigt die urspr\"ungliche Interpolation an.
+  \item \textit{Hauptakteure:} Nutzer
+  \item \textit{Nebenakteure:} 
+  \item \textit{Ausl\"oser:} Der Nutzer m\"ochte eine St\"utzstelle von der Zeichenfl\"ache l\"oschen
+  \item \textit{Standardablauf:}
+    \begin{enumerate}[label=(\arabic*)]
+    \item Der Nutzer klickt mit der rechten Maustaste auf eine beliebige Stelle der Zeichenfl\"ache.
+    \item Die Applikation l\"oscht die im L\"oschradius befindliche St\"utzstelle mit dem kleinsten x-Wert.
+    \item Die Applikation f\"uhrt die Interpolation mit den verbleibenden St\"utzstellen aus.
+    \item Die Applikation zeigt die neu berechnete Interpolation auf der Zeichenfl\"ache an.
+   
+    \end{enumerate}
+  \item \textit{Verzweigungen:}
+    \begin{enumerate}[label=(\arabic*a)]
+    \setcounter{enumii}{1}
+      \item Die Applikation kann keine St\"utzstelle im L\"oschradius identifizieren.
+      \item Der Use Case wird beendet.
+      \end{enumerate}
+
+ \end{itemize}
