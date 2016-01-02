@@ -1,0 +1,581 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2015.1.22)  3 JAN 2016 00:07
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**analyse_entwurf.tex
+(./analyse_entwurf.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen103
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks17
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks18
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-german/german.ldf
+Language: german 2013/12/13 v2.7 German support for babel (traditional orthogra
+phy)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-german/germanb.ldf
+Language: germanb 2013/12/13 v2.7 German support for babel (traditional orthogr
+aphy)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
+\babel@savecnt=\count101
+\U@D=\dimen112
+)
+\l@austrian = a dialect from \language\l@german 
+Package babel Info: Making " an active character on input line 107.
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c
+LaTeX Info: Redefining \nobreakspace on input line 65.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+\epsfxsize=\dimen115
+\epsfysize=\dimen116
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psfrag/psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count102
+\pfg@scount=\count103
+\pfg@temp=\write3
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count104
+\lst@gtempboxa=\box30
+\lst@token=\toks22
+\lst@length=\count105
+\lst@currlwidth=\dimen117
+\lst@column=\count106
+\lst@pos=\count107
+\lst@lostspace=\dimen118
+\lst@width=\dimen119
+\lst@newlines=\count108
+\lst@lineno=\count109
+\lst@maxwidth=\dimen120
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count110
+\lst@skipnumbers=\count111
+\lst@framebox=\box31
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip46
+\enit@outerparindent=\dimen121
+\enit@toks=\toks23
+\enit@inbox=\box32
+\enitdp@description=\count112
+)
+(./analyse_entwurf.aux (./vorwort.aux) (./analyse.aux) (./entwurf.aux)
+(./nutzerdoc.aux) (./entwicklerdoc.aux) (./quellcode.aux))
+\openout1 = `analyse_entwurf.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+\c@lstlisting=\count113
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+File: figures/cces_logo.eps Graphic file (type eps)
+
+<figures/cces_logo.eps>
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+] [2
+
+]
+(./analyse_entwurf.toc [3])
+\tf@toc=\write4
+\openout4 = `analyse_entwurf.toc'.
+
+ [4]
+\openout2 = `vorwort.aux'.
+
+ (./vorwort.tex
+Kapitel 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--17
+
+ []
+
+[5
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+) [6
+
+]
+\openout2 = `analyse.aux'.
+
+
+(./analyse.tex
+Kapitel 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--19
+
+ []
+
+File: Aktivitaetsdiagramm/Top_Level_Use_Cases.eps Graphic file (type eps)
+<Aktivitaetsdiagramm/Top_Level_Use_Cases.eps>
+Underfull \vbox (badness 1028) has occurred while \output is active []
+
+ [7
+
+
+
+]
+(./uc/uc_interpolation_auswaehlen.tex [8])
+File: Aktivitaetsdiagramm/interpolationAuswaehlen.eps Graphic file (type eps)
+
+<Aktivitaetsdiagramm/interpolationAuswaehlen.eps> (./uc/uc_reset.tex
+Underfull \hbox (badness 10000) in paragraph at lines 41--3
+
+ []
+
+
+Overfull \hbox (6.53558pt too wide) in paragraph at lines 3--4
+[]\OT1/cmr/m/it/10 Ziel: \OT1/cmr/m/n/10 Es sol-len al-le St[]utzstellen und di
+e Kur-ve von der Zei-chen-fl[]ache gel[]oscht,
+ []
+
+
+Overfull \hbox (30.2189pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/m/it/10 Ausl[]oser: \OT1/cmr/m/n/10 Der Nut-zer m[]ochte die Ap-pli-
+ka-ti-on auf den Default-mo-dus zur[]ucksetzen. 
+ []
+
+[9])
+File: Aktivitaetsdiagramm/Reset.eps Graphic file (type eps)
+ <Aktivitaetsdiagramm/Reset.eps> (./uc/uc_definitionsbereich_aendern.tex
+Underfull \hbox (badness 10000) in paragraph at lines 51--3
+
+ []
+
+[10])
+File: Aktivitaetsdiagramm/definitionbereichAendern.eps Graphic file (type eps)
+ <Aktivitaetsdiagramm/definitionbereichAendern.eps> (./uc/uc_beenden.tex
+Underfull \hbox (badness 10000) in paragraph at lines 61--3
+
+ []
+
+[11]
+Overfull \hbox (3.88942pt too wide) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/10 Der Nut-zer bet[]atigt auf der Be-nut-ze-ro-ber-fl[]ache mit 
+der lin-ken Mausta-
+ []
+
+)
+File: Aktivitaetsdiagramm/beenden.eps Graphic file (type eps)
+ <Aktivitaetsdiagramm/beenden.eps> (./uc/uc_stuetzstelle_loeschen.tex
+Underfull \hbox (badness 10000) in paragraph at lines 71--3
+
+ []
+
+
+Overfull \hbox (19.50067pt too wide) in paragraph at lines 15--16
+[]\OT1/cmr/m/n/10 Die Ap-pli-ka-ti-on f[]uhrt die In-ter-po-la-ti-on mit den ve
+r-blei-ben-den St[]utzstellen
+ []
+
+[12])
+File: Aktivitaetsdiagramm/stuetzstelleLoeschen.eps Graphic file (type eps)
+ <Aktivitaetsdiagramm/stuetzstelleLoeschen.eps>
+(./uc/uc_stuetzstelle_hinzufuegen.tex
+Underfull \hbox (badness 10000) in paragraph at lines 81--3
+
+ []
+
+[13])
+File: Aktivitaetsdiagramm/stutzstelleHInzufuegen.eps Graphic file (type eps)
+ <Aktivitaetsdiagramm/stutzstelleHInzufuegen.eps> [14]
+File: figures/Begriffsmodel.eps Graphic file (type eps)
+
+<figures/Begriffsmodel.eps>) [15] [16]
+\openout2 = `entwurf.aux'.
+
+ (./entwurf.tex
+Kapitel 3.
+File: figures/klassendiagramm.eps Graphic file (type eps)
+<figures/klassendiagramm.eps>
+File: figures/sequenzdiagramme/mausklick_links_auf_zeichenflaeche.eps Graphic f
+ile (type eps)
+
+<figures/sequenzdiagramme/mausklick_links_auf_zeichenflaeche.eps>
+File: figures/sequenzdiagramme/mausklick_rechts_auf_zeichenflaeche.eps Graphic 
+file (type eps)
+
+<figures/sequenzdiagramme/mausklick_rechts_auf_zeichenflaeche.eps>
+File: figures/sequenzdiagramme/interpolation_aendern.eps Graphic file (type eps
+)
+
+<figures/sequenzdiagramme/interpolation_aendern.eps>
+File: figures/sequenzdiagramme/definitionsbereich_aendern.eps Graphic file (typ
+e eps)
+
+<figures/sequenzdiagramme/definitionsbereich_aendern.eps>
+File: figures/sequenzdiagramme/Reset.eps Graphic file (type eps)
+
+<figures/sequenzdiagramme/Reset.eps>
+File: figures/sequenzdiagramme/Beenden.eps Graphic file (type eps)
+ <figures/sequenzdiagramme/Beenden.eps>)
+[17
+
+
+
+] [18] [19] [20]
+\openout2 = `nutzerdoc.aux'.
+
+ (./nutzerdoc.tex
+Kapitel 4.
+
+Overfull \hbox (17.58414pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/10 Erstellen ei-nes gew[]unschten In-stal-la-ti-ons-ver-zeich-ni
+s-ses, z.B. []\OT1/cmtt/m/n/10 ./Interpolation 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+File: figures/start_screen.eps Graphic file (type eps)
+<figures/start_screen.eps> [21
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+File: figures/linear_interpol_screen.eps Graphic file (type eps)
+<figures/linear_interpol_screen.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+File: figures/change_interpol_screen.eps Graphic file (type eps)
+<figures/change_interpol_screen.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+File: figures/polynom_interpol_screen.eps Graphic file (type eps)
+
+<figures/polynom_interpol_screen.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+File: figures/error_message_screen.eps Graphic file (type eps)
+<figures/error_message_screen.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25])
+[26]
+\openout2 = `entwicklerdoc.aux'.
+
+ (./entwicklerdoc.tex
+Kapitel 5.
+
+Overfull \hbox (1.95177pt too wide) in paragraph at lines 14--16
+\OT1/cmr/m/n/10 um die ein-zel-nen In-ter-po-la-ti-ons-me-tho-den zu im-ple-men
+-tie-ren. Die Stan-dardm[]a^^Yig
+ []
+
+
+Overfull \hbox (3.16644pt too wide) in paragraph at lines 14--16
+\OT1/cmr/m/n/10 fin-det sich je-weils im An-hang Sek-ti-on A.1.3[] und in den D
+a-tei-en \OT1/cmtt/m/n/10 interpolation.h
+ []
+
+
+Overfull \hbox (79.30333pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/10 wer-den zwei neue Ver-zeich-nis-se \OT1/cmtt/m/n/10 ./Interpola
+tion/doc/html/ \OT1/cmr/m/n/10 und \OT1/cmtt/m/n/10 ./Interpolation/doc/latex/
+ []
+
+[27
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 28.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 28.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+
+Overfull \hbox (34.36043pt too wide) in paragraph at lines 42--44
+[]\OT1/cmr/m/n/10 Die ei-gent-li-che In-ter-po-la-ti-on wird durch die Schnitt-
+stel-le \OT1/cmtt/m/n/10 StartInterpolation(...)
+ []
+
+
+Overfull \hbox (0.8337pt too wide) in paragraph at lines 42--44
+\OT1/cmr/m/n/10 de-fi-niert, wel-che in den Va-ria-blen \OT1/cmtt/m/n/10 xCurve
+, yCurve \OT1/cmr/m/n/10 die zu \OT1/cmtt/m/n/10 xPos,yPos \OT1/cmr/m/n/10 geh[
+]orenden
+ []
+
+[28]
+Overfull \hbox (15.36192pt too wide) in paragraph at lines 62--63
+\OT1/cmr/m/n/10 Angenommen, die neue In-ter-po-la-ti-ons-art wur-de in den Da-t
+ei-en \OT1/cmtt/m/n/10 myinterpolation.h
+ []
+
+
+Overfull \hbox (60.83202pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 ein Ob-jekt vom Typ \OT1/cmtt/m/n/10 myInterpolation \OT1/cmr/m
+/n/10 er-zeugt und in der Funk-ti-on \OT1/cmtt/m/n/10 changeActiveModel(...)
+ []
+
+[29]) [30]
+No file analyse_entwurf.bbl.
+\openout2 = `quellcode.aux'.
+
+(./quellcode.tex
+Anhang A.
+(../Projekt/Interpolation/mainwindow.h [31
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32])
+(../Projekt/Interpolation/mainwindow.cpp
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36])
+(../Projekt/Interpolation/interpolationcontrol.h [37]
+Missing character: There is no Ã in font cmr9!
+Missing character: There is no ¼ in font cmr9!
+Missing character: There is no Ã in font cmr9!
+Missing character: There is no Ÿ in font cmr9!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Missing character: There is no Ã in font cmr9!
+Missing character: There is no ¼ in font cmr9!
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+(../Projekt/Interpolation/interpolationcontrol.cpp [40])
+(../Projekt/Interpolation/interpolation.h [41])
+(../Projekt/Interpolation/interpolation.cpp)
+(../Projekt/Interpolation/cubicspline.h [42])
+(../Projekt/Interpolation/cubicspline.cpp [43])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+(../Projekt/Interpolation/polynomialinterpolation.h)
+(../Projekt/Interpolation/polynomialinterpolation.cpp [45])
+(../Projekt/Interpolation/linearspline.h [46])
+(../Projekt/Interpolation/linearspline.cpp [47])
+(../Projekt/Interpolation/main.cpp)) [48] (./analyse_entwurf.aux (./vorwort.aux
+) (./analyse.aux) (./entwurf.aux) (./nutzerdoc.aux) (./entwicklerdoc.aux)
+(./quellcode.aux)) ) 
+Here is how much of TeX's memory you used:
+ 3857 strings out of 493118
+ 53426 string characters out of 6135459
+ 259961 words of memory out of 5000000
+ 7152 multiletter control sequences out of 15000+600000
+ 15911 words of font info for 61 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 32i,6n,32p,862b,1565s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on analyse_entwurf.dvi (48 pages, 137932 bytes).
