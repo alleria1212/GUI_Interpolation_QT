@@ -1,6 +1,9 @@
 # GUI_Interpolation_QT
 Small project to get familiar with QT
 
+Sourcecode: 
+GUI_Interpolation_QT/Projekt/interpolation/
+
 Add some points on the plot. Interpolation during runtime. Default: Linear Splines
 
 Interpolationmethods:
